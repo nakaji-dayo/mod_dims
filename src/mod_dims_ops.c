@@ -182,6 +182,7 @@ dims_crop_operation (dims_request_rec *d, char *args, char **err) {
 apr_status_t
 dims_format_operation (dims_request_rec *d, char *args, char **err) {
     MAGICK_CHECK(MagickSetImageFormat(d->wand, args), d);
+    
     return DIMS_SUCCESS;
 }
 
